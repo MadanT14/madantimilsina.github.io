@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&family=Inter:wght@300;400;500&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.back{
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    z-index: 2;
+    color: white;
+}
+
+.pngimg{
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 250px;
+    width: 250px;
+    z-index: 2;
+}
+
+.fa-circle-left{
+    margin-right: 1rem;
+}
+
+.contact{
+    /* border: 2px solid red; */
+    min-height: 100vh;
+    display: flex;
+
+}
+.myinfo, .con-form{
+    width: 50%;
+    max-height: 100%;
+    position: relative;
+}
+
+.myinfo{
+    background-color: #212121;
+    color: white;
+}
+
+
+.info-items{
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+}
+
+.info-items h1{
+    width: 30rem;
+    margin-bottom: 3rem;
+    font-size: 7rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.info-items .oneh3{
+    font-size: 2.5rem;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.info-items .twoh3{
+    display: none;
+}
+
+.info-items ul{
+    margin-left: 2rem;
+    font-size: 2rem;
+    list-style: none;
+    font-family: 'Barlow', sans-serif;
+    margin-bottom: 4rem;
+    font-weight: 500;
+
+}
+
+.my-email, .my-address{
+    font-size: 1.5rem;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+}
+
+/* -------------next box------------------ */
+
+input, textarea{
+    display: block;
+    font-family:  'Inter', sans-serif;
+    border: none;
+    border: 1px solid black;
+    width: 30rem;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.formitems{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.formitems h1{
+    color: #404040;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-family: 'Inter', sans-serif;
+
+}
+
+input{
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+}
+
+
+textarea {
+    resize: none;
+    padding: 0.5rem;
+    margin-bottom: 4rem;
+}
+
+button{
+    padding: 1rem 1.5rem;
+    border: none;
+    background-color: #FF2121;
+}
+
+button a{
+    color: white;
+    text-decoration: none;
+
+}
+
+body{
+    animation: fadein 4s;
+}
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width:319.5px){
+    html{
+        font-size: 52%;
+    }
+
+    .back{
+        left: 5%;
+        font-size: 1.5rem;
+    }
+
+    .pngimg{
+        height: 80px;
+        width: 80px;
+        top: 30%;
+    }
+
+    .contact{
+        display: block;
+        min-height: auto;
+    }
+
+    .myinfo, .con-form{
+        width: 100%;
+        max-height: auto;
+    }
+
+    .info-items{
+        position: static;
+        transform: none;
+        padding: 0 1rem;
+    }
+
+    .info-items h1{
+        text-align: center;
+        padding-top: 5rem;
+        width: auto;
+    }
+
+    .info-items .oneh3{
+        display: none;
+    }
+
+    .info-items .twoh3{
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        max-width: 30rem;
+        margin: 0 auto;
+    }
+
+    .info-items ul{
+        text-align: center;
+        margin-left: none;
+    }
+
+    ul li{
+        display: none;
+    }
+
+    .my-email, .my-address{
+        text-align: center;
+    }
+
+    .my-address{
+        padding-bottom: 5rem;
+    }
+
+
+
+
+/* ----------------next box------------ */
+    .formitems{
+        position: static;
+        transform: none;
+    }
+
+    input, textarea{
+        max-width: 25rem;
+        margin: 2rem auto;
+    }
+
+    .formitems h1{
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    button{
+        display: block;
+        margin: 2rem auto;
+
+    }
+
+
+}
+
+
+@media screen and (min-width:320px){
+    html{
+        font-size: 52%;
+    }
+
+    .back{
+        left: 5%;
+        font-size: 1.5rem;
+    }
+
+    .pngimg{
+        height: 120px;
+        width: 120px;
+        top: 30%;
+    }
+
+    .contact{
+        display: block;
+        min-height: auto;
+    }
+
+    .myinfo, .con-form{
+        width: 100%;
+        max-height: auto;
+    }
+
+    .info-items{
+        position: static;
+        transform: none;
+        padding: 0 1rem;
+    }
+
+    .info-items h1{
+        text-align: center;
+        padding-top: 5rem;
+        width: 30rem;
+        margin: 0 auto; 
+        margin-bottom: 2rem;
+    }
+
+    .info-items .oneh3{
+        display: none;
+    }
+
+    .info-items .twoh3{
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        max-width: 30rem;
+        margin: 0 auto;
+    }
+
+    .info-items ul{
+        text-align: center;
+        margin-left: none;
+    }
+
+    ul li{
+        display: none;
+    }
+
+    .my-email, .my-address{
+        text-align: center;
+    }
+
+    .my-address{
+        padding-bottom: 5rem;
+    }
+
+
+
+
+/* ----------------next box------------ */
+    .formitems{
+        position: static;
+        transform: none;
+    }
+
+    input, textarea{
+        max-width: 30rem;
+        margin: 2rem auto;
+    }
+
+    .formitems h1{
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    button{
+        display: block;
+        margin: 2rem auto;
+
+    }
+
+}
+
+
+@media screen and (min-width:481px){
+    html{
+        font-size: 55%;
+    }
+
+    .back{
+        font-size: 2rem;
+    }
+
+    .info-items h1{
+        font-size: 8rem;
+    }
+
+
+
+
+}
+
+
+@media screen and (min-width:600px){
+    .back{
+        left: 2%;
+        top: 4%;
+    }
+    .contact{
+        display: flex;
+        min-height: 100vh;
+    }
+
+    .myinfo, .con-form{
+        width: 50%;
+        max-height: 100%;
+        position: relative;
+    }
+
+    .info-items{
+        position: absolute;
+        top: 50%;
+        left: 55%;
+        transform: translate(-50%,-50%);
+    }
+
+    .info-items h1{
+        width: 30rem;
+        margin-bottom: 3rem;
+        font-size: 7rem;
+    }
+
+    .info-items .oneh3{
+        display: block;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .info-items .twoh3{
+        display: none;
+    }
+
+    .info-items ul{
+        margin-left: 2rem;
+        font-size: 1.5rem;
+        margin-bottom: 4rem;
+    }
+
+    ul li{
+        display: block;
+    }
+
+    .my-email, .my-address{
+        font-size: 1.5rem;
+    }
+
+    /* -------------next box------------------ */
+
+    input, textarea{
+        min-width: 30rem;
+    }
+
+    .formitems{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .formitems h1{
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    input{
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    textarea {
+        margin-bottom: 4rem;
+    }
+
+    button{
+        padding: 1rem 1.5rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+@media screen and (min-width:769px){
+    html{
+        font-size: 58%;
+    }
+
+    .pngimg{
+        top: 35%;
+        height: 180px;
+        width: 180px;
+    }
+}
+
+
+@media screen and (min-width:946px){
+    html{
+        font-size: 60%;
+    }
+
+    .pngimg{
+        top: 35%;
+        height: 200px;
+        width: 200px;
+    }
+}
+
+
+@media screen and (min-width:1100px){
+    html{
+        font-size: 62%;
+    }
+
+    .pngimg{
+        top: 35%;
+        height: 250px;
+        width: 250px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

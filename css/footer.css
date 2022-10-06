@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Inter:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.contact-card{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    margin: 0 10rem;
+    padding: 0 2rem;
+    align-items: center;
+    box-shadow: 0px 0px 8px 0px rgb(153, 153, 153);
+}
+
+.con-text h1{
+    color: #707070;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+    font-family: 'Barlow', sans-serif;
+}
+
+.con-text p{
+    color: #707070;
+    font-size: 2rem;
+    width: 500px;
+    font-family: sans-serif;
+    margin-bottom: 1rem;
+    font-family: 'Barlow', sans-serif;
+}
+
+.con-btn{
+    font-size: 3.5rem;
+    background-color: #FF5151;
+    padding: 2rem 3rem;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    border: none;
+}
+
+/* ---------------footer ----------------- */
+
+
+footer{
+    padding: 2rem 10rem;
+    margin-top: 10rem;
+    background-color: #f8f9fa;
+}
+
+footer h2{
+    color: #202125;
+    font-size: 2rem;
+    display: inline;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.fa-brands{
+    font-size: 2.5rem;
+    margin: 0 0.5rem;
+    color:  rgb(86, 86, 86);
+}
+
+.topline{
+    margin-top: 0.8rem;
+    margin-bottom: 4rem;
+}
+
+.footerwrap{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fabout h1{
+    color: rgb(86, 86, 86);
+    font-size: 2.5rem;
+    font-family: sans-serif;
+}
+
+.fabout p{
+    font-size: 1.5rem;
+    width: 42rem;
+    margin-top: 1.5rem;
+    font-family: sans-serif;
+    color: #707070;
+}
+
+.finfo h1{
+    color:  rgb(86, 86, 86);
+    font-size: 2.5rem;
+    font-family: sans-serif;
+}
+
+.finfo li{
+    list-style: none;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.finfo li a{
+    color: #707070;
+    text-decoration: none;
+    font-family: sans-serif;
+
+}
+
+.fsupport h1{
+    color:  rgb(86, 86, 86);
+    font-size: 2.5rem;
+    font-family: sans-serif;
+}
+
+.fsupport li{
+    list-style: none;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.fsupport li a{
+    text-decoration: none;
+    color: #707070;
+    font-family: sans-serif;
+
+}
+
+.bottomline{
+    margin-top: 8rem;
+}
+
+.copyright{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:319px){
+    html{
+        font-size: 52%;
+    }
+
+    .contact-card{
+        display: block;
+        margin: 0 1rem;
+        padding: 1rem 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .con-text h1{
+        padding-top: 1rem;
+        font-size: 3rem;
+        width: auto;
+        text-align: center;
+    }
+
+    .con-text p{
+        font-size: 1.8rems;
+        width: auto;
+        text-align: center;
+    }
+
+    .con-btn{
+        font-size: 2.5rem;
+        padding: 0.5rem 1rem;
+        height: auto;
+        margin: auto;
+        display: block;
+        margin-top: 3rem;
+        width: 120px;
+        text-align: center;
+        background-color: none;
+    }
+
+    /* -----------------------foooter---------- */
+
+    footer{
+        padding: 2rem 2rem;
+    }
+
+    footer h2{
+        font-size: 1.8rem;
+
+    }
+
+    .fa-brands{
+        margin: 0 0.5rem;
+        font-size: 2rem;
+    }
+
+    .footerwrap{
+        display: block;
+    }
+
+    .fabout h1, .finfo h1, .fsupport h1{
+        font-size: 2rem;
+        margin-top: 4rem;
+    }
+
+    .fabout p{
+        width: auto;
+    }
+
+
+
+
+}
+
+
+@media screen and (min-width:320px){
+    html{
+        font-size: 52%;
+    }
+
+    .contact-card{
+        display: block;
+        margin: 0 1rem;
+        padding: 1rem 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .con-text h1{
+        padding-top: 1rem;
+        font-size: 3rem;
+        width: auto;
+        text-align: center;
+    }
+
+    .con-text p{
+        font-size: 1.8rem;
+        width: auto;
+        text-align: center;
+    }
+
+    .con-btn{
+        font-size: 2.5rem;
+        padding: 0.5rem 1rem;
+        height: auto;
+        margin: auto;
+        display: block;
+        margin-top: 3rem;
+        width: 120px;
+        text-align: center;
+        background-color: none;
+    }
+
+        /* -----------------------foooter---------- */
+
+        footer{
+            padding: 2rem 2rem;
+        }
+    
+        footer h2{
+            font-size: 1.8rem;
+    
+        }
+    
+        .fa-brands{
+            margin: 0 0.5rem;
+            font-size: 2rem;
+        }
+    
+        .footerwrap{
+            display: block;
+        }
+    
+        .fabout h1, .finfo h1, .fsupport h1{
+            font-size: 2rem;
+            margin-top: 4rem;
+        }
+    
+        .fabout p{
+            width: auto;
+        }
+
+
+}
+
+
+@media screen and (min-width:481px){
+    html{
+        font-size: 55%;
+    }
+
+    .contact-card{
+        margin: 0 2rem;
+        padding: 2rem 8rem;
+        padding-bottom: 2rem;
+    }
+
+    .con-text h1{
+        font-size: 3.5rem;
+    }
+
+    .con-text{
+        font-size: 2rem;
+    }
+
+    .con-btn{
+        font-size: 2rem;
+        padding: 1rem 1.5rem;
+    }
+
+    /* -----------------footer = none --------- */
+
+
+
+}
+
+
+@media screen and (min-width:600px){
+    .contact-card{
+        display: flex;
+        padding: 2rem 4rem;
+        margin: 0 2rem;
+        align-items: center;
+    }
+
+    .con-text h1{
+        text-align: left;
+        font-size: 3rem;
+        width: 300px;
+    }
+
+    .con-text p{
+        text-align: left;
+        font-size: 1.8rem;
+        width: 300px;
+    }
+
+    .con-btn{
+        height: 100%;
+        margin: 0;
+        display: inline;
+        width: auto;
+    }
+
+    /* --------------------footer----------------- */
+
+    footer{
+        padding: 2rem 5rem;
+    }
+
+    footer h2{
+        font-size: 2rem;
+    }
+
+    .fa-brands{
+        font-size: 2.2rem;
+    }
+
+    .footerwrap{
+        display: flex;
+    }
+
+
+    .fabout p{
+        width: 28rem;
+    }
+
+
+
+
+
+}
+
+
+@media screen and (min-width:769px){
+    html{
+        font-size: 58%;
+    }
+
+    .contact-card{
+        margin: 0 3rem;
+    }
+
+    .con-text h1{
+        width: 510px;
+    }
+
+    .con-text p{
+        width: 420px;
+    }
+
+    .con-btn{
+        font-size: 3rem;
+        padding: 1rem 2rem;
+    }
+
+
+    /* ---------------foooter------------------ */
+    .fabout p{
+        width: 30rem;
+    }
+
+
+}
+
+
+@media screen and (min-width:946px){
+    html{
+        font-size: 60%;
+    }
+
+    .contact-card{
+        margin: 0 5rem;
+    }
+
+    /* ----------------footer------------------ */
+
+    footer{
+        padding: 2rem 8rem;
+    }
+
+    .fabout p{
+        width: 34rem;
+    }
+}
+
+
+@media screen and (min-width:1100px){
+    html{
+        font-size: 62%;
+    }
+
+    .contact-card{
+        margin: 0 8rem;
+    }
+
+     /* ----------------footer------------------ */
+
+     footer{
+        padding: 5rem 14rem;
+    }
+
+    .fabout p{
+        width: 38rem;
+    }
+}
+

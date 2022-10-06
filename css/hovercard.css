@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.hover{
+    margin-top: 10rem;
+}
+
+.subtitles{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+
+.subtitles a{
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.s-one{
+    color: #FF5151;
+}
+
+
+.wrapper, .wrapper2{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 6rem;
+    /* border: 2px solid red; */
+    height: 350px;
+    overflow-y: hidden;
+}
+
+.wrapper{
+    margin-bottom: 2rem;
+}
+
+
+
+.card{
+    width: 100%;
+    position: relative;
+    margin: 0 1rem;
+}
+
+.citem{
+    height: 100%;
+    /* border: 2px solid red; */
+}
+
+.cimgbox{
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid green; */
+}
+
+.cimgbox img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(50%);
+}
+
+.citem .ctitle{
+    font-size: 3.5rem;
+    font-family: sans-serif;
+    color: white;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 0.4s;
+}
+
+
+.citem .cpara{
+    font-size: 1.8rem;
+    font-family: sans-serif;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    transition: all 0.4s;
+
+}
+
+.citem .paraactive{
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: all 0.6s;
+}
+
+
+.activebtn{
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 1rem 1.5rem;
+    background-color: #FB4F4F;
+    border: none;
+    transition: all 0.8s;
+    opacity: 0;
+}
+
+.activebtn a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.card:hover .ctitle{
+    font-size: 3.5rem;
+    top: 12%;
+}
+
+.card:hover .cpara{
+    opacity: 0;
+}
+
+.card:hover .paraactive{
+    opacity: 1;
+}
+
+.card:hover .activebtn{
+    opacity: 1;
+}
+
+.activebtn:hover{
+    background-color: blueviolet;
+}
+
+@media screen and (max-width:319px){
+    html{
+        font-size: 52%;
+    }
+
+    .subtitles{
+        gap: 1.5rem;
+    }
+
+    .subtitles a{
+        font-size: 1.5rem;
+    }
+
+
+    .wrapper, .wrapper2{
+        display: block;
+        padding: 0 1rem;
+        height: auto;
+    }
+
+    .card{
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+    
+}
+
+
+@media screen and (min-width:320px){
+    html{
+        font-size: 52%;
+    }
+
+    .subtitles{
+        gap: 2rem;
+    }
+
+    .subtitles a{
+        font-size: 1.5rem;
+    }
+
+
+    .wrapper, .wrapper2{
+        display: block;
+        padding: 0 2rem;
+        height: auto;
+    }
+
+    .card{
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+
+@media screen and (min-width:481px){
+    html{
+        font-size: 55%;
+    }
+
+    .subtitles{
+        gap: 2.5rem;
+    }
+
+    .subtitles a{
+        font-size: 1.6rem;
+    }
+
+    .citem .ctitle{
+        font-size: 5rem;
+    }
+
+    .citem .cpara{
+        font-size: 2rem;
+    }
+
+    .card:hover .ctitle{
+        font-size: 4.5rem;
+        top: 12%;
+    }
+
+    .card:hover .paraactive{
+        font-size: 2rem;
+    }
+
+}
+
+
+@media screen and (min-width:600px){
+
+    .subtitles{
+        gap: 2.8rem;
+    }
+
+    .subtitles a{
+        font-size: 1.8rem;
+    }
+
+    .wrapper, .wrapper2{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1.5rem;
+        height: 250px;
+    }
+
+    .wrapper{
+        margin-bottom: 1rem;
+    }
+
+    .card{
+        margin: 0 0.5rem;
+    }
+
+    .citem .ctitle{
+        font-size: 2.3rem;
+    }
+
+    .citem .cpara{
+        font-size: 1.3rem;
+    }
+
+    .card:hover .ctitle{
+        font-size: 2rem;
+    }
+
+    .card:hover .paraactive{
+        font-size: 1.1rem;
+    }
+
+    .activebtn{
+        padding: 0.5rem 1rem;
+    }
+
+    .activebtn a{
+        font-size: 1.2rem;
+    }
+
+
+}
+
+
+@media screen and (min-width:769px){
+    html{
+        font-size: 58%;
+    }
+
+    .subtitles{
+        gap: 3rem;
+    }
+
+    .subtitles a{
+        font-size: 1.8rem;
+    }
+
+    .wrapper, .wrapper2{
+        height: 300px;
+    }
+
+    .citem .ctitle{
+        font-size: 3rem;
+    }
+
+    .citem .cpara{
+        font-size: 1.8rem;
+    }
+
+    .card:hover .ctitle{
+        font-size: 2.8rem;
+    }
+
+    .card:hover .paraactive{
+        font-size: 1.4rem;
+    }
+
+    .activebtn{
+        padding: 0.5rem 1rem;
+    }
+
+    .activebtn a{
+        font-size: 1.4rem;
+    }
+
+    
+}
+
+
+@media screen and (min-width:946px){
+    html{
+        font-size: 60%;
+    }
+
+    .wrapper, .wrapper2{
+        height: 340px;
+    }
+
+    .card:hover .paraactive{
+        font-size: 1.5rem;
+    }
+
+    .activebtn{
+        padding: 1rem 1.5rem;
+    }
+
+    .activebtn a{
+        font-size: 1.2rem;
+    }
+}
+
+
+@media screen and (min-width:1100px){
+    html{
+        font-size: 62%;
+    }
+
+}

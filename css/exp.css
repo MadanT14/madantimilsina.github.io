@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.ehead{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 10rem;
+    font-family: sans-serif;
+}
+
+.mainwrap{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40rem;
+    margin-top: 5rem;
+    overflow-y: hidden;
+    margin-bottom: 10rem;
+}
+
+.years .numyrs{
+    font-weight: 700;
+    font-size: 24rem;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.years .yrspara{
+    font-weight: 500;
+    font-size: 4rem;
+    font-family: sans-serif;
+}
+
+.interaction .client-achiv, .interaction .proj-web{
+    display: flex;
+    font-family: sans-serif;
+}
+
+.exp-item{
+    background-color: #161616;
+    color: white;
+    margin: 1rem 1rem;
+    width: 250px;
+    height: 150px;
+    transition: all 0.3s;
+}
+
+.exp-item h1{
+    font-size: 8rem;
+    text-align: center;
+    margin-top: 0.8rem;
+}
+
+.exp-item p{
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+.exp-item:hover{
+    transform: scale(120%,120%);
+    background: #6C43C3;
+}
+
+
+
+@media screen and (max-width:319px){
+    html{
+        font-size: 52%;
+    }
+
+    .ehead{
+        font-size: 2.5rem;
+    }
+
+    .mainwrap{
+        display: block;
+        padding: 0;
+    }
+
+    .years .numyrs{
+        font-size: 12rem;
+    }
+
+    .years .yrspara{
+        text-align: center;
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .exp-item{
+        margin: 0.5rem 0.5rem;
+        height: 120px;
+    }
+
+    .exp-item h1{
+        font-size: 5rem;
+        margin-top: 2rem;
+    }
+}
+
+
+@media screen and (min-width:320px){
+    html{
+        font-size: 52%;
+    }
+
+    .ehead{
+        font-size: 2.5rem;
+    }
+
+    .mainwrap{
+        display: block;
+        padding: 0;
+    }
+
+    .years .numyrs{
+        font-size: 12rem;
+    }
+
+    .years .yrspara{
+        text-align: center;
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .exp-item{
+        margin: 0.5rem 0.5rem;
+        height: 120px;
+    }
+
+    .exp-item h1{
+        font-size: 5rem;
+        margin-top: 2rem;
+    }
+}
+
+
+@media screen and (min-width:481px){
+    html{
+        font-size: 55%;
+    }
+
+    .ehead{
+        font-size: 3rem;
+    }
+
+    .years .numyrs{
+        font-size: 14rem;
+    }
+
+    .years .yrspara{
+        font-size: 4rem;
+    }
+
+    .exp-item{
+        height: 140px;
+        margin: 1rem 1rem;
+    }
+
+    .exp-item h1{
+        font-size: 6rem;
+    }
+
+    .interaction{
+        text-align: center;
+    }
+
+    .interaction .client-achiv, .interaction .proj-web{
+        justify-content: center;
+    }
+}
+
+
+@media screen and (min-width:600px){
+    .ehead{
+        font-size: 3rem;
+    }
+
+    .mainwrap{
+        display: flex;
+        padding: 0rem 1rem;
+    }
+
+    .years .numyrs{
+        margin-top: 5rem;
+        font-size: 12rem;
+    }
+
+    .years .yrspara{
+        font-size: 3.5rem;
+    }
+
+    .exp-item{
+        width: 180px;
+        margin: 0.5rem 0.5rem;
+    }
+
+}
+
+
+@media screen and (min-width:769px){
+    html{
+        font-size: 58%;
+    }
+
+    .ehead{
+        font-size: 3.5rem;
+    }
+
+    .mainwrap{
+        padding: 0 3rem;
+    }
+
+    .exp-item{
+        width: 220px;
+    }
+
+}
+
+
+@media screen and (min-width:946px){
+    html{
+        font-size: 60%;
+    }
+
+    .mainwrap{
+        padding: 0 5rem;
+    }
+
+    .exp-item{
+        width: 250px;
+    }
+
+}
+
+
+@media screen and (min-width:1100px){
+    html{
+        font-size: 62%;
+    }
+
+    .mainwrap{
+        padding: 0 10rem;
+    }
+    .exp-item{
+        width: 260px;
+    }
+}
+@media screen and (min-width:1400px){
+    html{
+        font-size: 62%;
+    }
+
+    .mainwrap{
+        padding: 0 30rem;
+    }
+
+    .exp-item{
+        margin: 1rem 1rem;
+    }
+
+
+}
+
+
+

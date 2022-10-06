@@ -1,0 +1,754 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+.whole{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+.navbar{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 7rem;
+    background: white;
+    align-items: center;
+    z-index: 5;
+    transition: all 0.8s;
+}
+
+.navbar:hover{
+    box-shadow: 0px 9px 8px -7px #98989827;
+}
+
+.logobox{
+    height: 4rem;
+}
+
+.logoimg{
+    height: 100%;
+    width: 100%;
+}
+
+.items{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    font-size: 1.8rem;
+}
+
+.items a{
+    text-decoration: none;
+    color: black;
+}
+
+.item1 a{
+    color: #FF2121;
+    font-weight: 500;
+}
+
+.hamburger{
+    display: none;
+    z-index: 2;
+}
+
+.fa-solid{
+    font-size: 2.5rem;
+}
+
+.hamburger .fa-xmark{
+    display: none;
+}
+
+
+/* ---------------------------------------------- */
+/* BODY 1------------------------------------------ */
+/* ................................................ */
+
+
+
+.mainbody{
+    min-height: calc(100vh - 7rem);
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    position: relative;
+}
+
+.imgbox{
+    width: 40rem;
+    /* border: 2px solid red; */
+    margin-top: 3rem;
+}
+
+.imgbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.imgbox-m{
+    width: 900px;
+    height: 100%;
+    display: none;
+}
+
+.imgbox-m img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.textbox{
+    max-width: 60rem;
+    padding-left: 6rem;
+}
+
+.textbox h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.textbox h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.textbox p{
+    font-size: 1.6rem;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.btn{
+    margin-top: 8rem;
+    padding: 1rem 2rem;
+    background-color: #FF5151;
+    border: none;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.polygon{
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    top: 15%;
+    left: 10%;
+}
+
+/* ---------------------------------------------- */
+/* CIRCLE ONE IS USED TO MAKE LEFT SIDE SPACE ------------ */
+/* .................................................. */
+
+
+.circle2{
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    top: 15%;
+    left: 45%;
+    z-index: -2;
+}
+.infinity{
+    position: absolute;
+    width: 38rem;
+    height: 38rem;
+    top: 30%;
+    left: 55%;
+    z-index: -2;
+}
+
+
+/* ---------------------------------------------- */
+/* Banners ------------ */
+/* .................................................. */
+
+
+
+
+.container{
+    padding: 0 3rem;
+}
+
+.owlmdn{
+    margin: 10rem auto;
+    width: 500px;
+    height: 500px;
+    /* border: 2px solid red; */
+}
+
+.owlmdn img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.back{
+    text-align: right;
+    margin: 4rem 8rem;
+}
+
+.fa-circle-up{
+    font-size: 2.2rem;
+    color: rgb(0, 89, 255);
+}
+
+.back-top{
+    font-size: 2rem;
+    text-decoration: none;
+    margin-right: 1rem;
+    color: rgb(0, 89, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:319px){
+    html{
+        font-size: 52%;
+    }
+    .navbar{
+        padding: 2.8rem;
+        position: relative;
+        height: 7rem;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .navitems{
+        display: flex;
+        background-color: aquamarine;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+        transition: all linear 0.3s;
+        transform: translateX(100%);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    .active .navitems{
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+    
+    .navitems .items{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .active .hamburger .fa-xmark{
+        display: block;
+    }
+
+    .active .hamburger .fa-bars{
+        display: none;
+    }
+
+
+    /* ----------------------body1 ---------- */
+
+
+
+    .imgbox{
+        display: none;
+    }
+
+    .imgbox-m{
+        display: block;
+        height: 30rem;
+        width: 30rem;
+    }
+
+    .mainbody{
+        flex-direction: column;
+        gap: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 7.5rem;
+
+    }
+
+    .textbox{
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    .textbox h1{
+        font-size: 3rem;
+    }
+
+    .textbox p{
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+    }
+
+    .btn{
+        margin-top: 4rem;
+    }
+
+    .polygon{
+        display: none;
+    }
+    .circle2{
+        display: none;
+    }
+    .circle1{
+        display: none;
+    }
+
+    .infinity{
+        display: none;
+    }
+
+    .owlmdn{
+        width: 300px;
+        height: 300px;
+    }
+
+    .back{
+        text-align: center;
+        margin: 4rem 0;
+        padding: 0;
+    }
+
+    .back-top{
+        margin-right: 0.5rem;
+    }
+
+
+
+    
+
+}
+
+
+@media screen and (min-width:320px){
+    html{
+        font-size: 52%;
+    }
+
+    .mainbody{
+        padding-bottom: 2rem;
+    }
+
+    .navbar{
+        padding: 2.8rem;
+        position: relative;
+
+    }
+    .navitems{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .navitems{
+        display: flex;
+        background-color: aquamarine;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+        transition: all linear 0.3s;
+        transform: translateX(100%);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    .active .navitems{
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+    
+    .navitems .items{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .active .hamburger .fa-xmark{
+        display: block;
+    }
+
+    .active .hamburger .fa-bars{
+        display: none;
+    }
+
+    /* --------body---------------------- */
+
+
+    .mainbody{
+        flex-direction: column;
+        gap: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 7.5rem;
+
+    }
+
+    .imgbox{
+        display: none;
+    }
+
+    .imgbox-m{
+        display: block;
+        height: 30rem;
+        width: 30rem;
+    }
+
+
+    .textbox{
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    .textbox h1{
+        font-size: 3rem;
+    }
+
+
+    .textbox p{
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+    }
+
+    .btn{
+        margin-top: 4rem;
+    }
+
+    .polygon{
+        display: none;
+    }
+    .circle2{
+        display: none;
+    }
+    .circle1{
+        display: none;
+    }
+
+    .infinity{
+        display: none;
+    }
+
+    .owlmdn{
+        width: 300px;
+        height: 300px;
+    }
+
+
+    .back{
+        text-align: center;
+        margin: 4rem 0;
+        padding: 0;
+    }
+
+    .back-top{
+        margin-right: 0.5rem;
+    }
+
+
+}
+
+
+@media screen and (min-width:481px){
+    html{
+        font-size: 55%;
+    }
+
+    .navitems{
+        width: 70%;
+    }
+}
+
+
+@media screen and (min-width:600px){
+
+    .navbar{
+        position: static;
+        padding: 3rem;
+    }
+
+    .navitems{
+        display: block;
+        height: auto;
+        width: auto;
+        position: static;
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        background-color: transparent;
+    }
+
+    .navitems .items{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    /* ----------body 1 --------------- */
+
+    .mainbody{
+        flex-direction: row-reverse;
+    }
+    .imgbox{
+        display: block;
+        width: 65rem;
+    }
+
+    .imgbox-m{
+        display: none;
+    }
+
+    .textbox{
+        text-align: left;
+        padding: 0;
+        padding-left: 3rem;
+    }
+
+    .textbox p{
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+    }
+
+    .polygon{
+        top: 10%;
+        display: block;
+        width: 5rem;
+        height: 5rem;
+    }
+    .circle2{
+        display: block;
+    }
+    .circle1{
+        display: block;
+    }
+
+    .infinity{
+        top: 25%;
+        display: block;
+        height: 18rem;
+        width: 18rem;
+        left: 60%;
+    }
+
+    .owlmdn{
+        width: 340px;
+        height: 340px;
+    }
+
+    .back{
+        margin: 4rem 4rem;
+        text-align: right;
+    }
+
+
+}
+
+
+@media screen and (min-width:769px){
+    html{
+        font-size: 58%;
+    }
+
+    .navbar{
+        padding: 0 5rem;
+    }
+
+/* ----------body 1 --------------- */
+
+.mainbody{
+    align-items: center;
+}
+
+.imgbox{
+    width: 65rem;
+}
+
+.polygon{
+    top: 15%;
+}
+
+.infinity{
+    left: 58%;
+}
+
+.owlmdn{
+    width: 380px;
+    height: 380px;
+}
+
+
+
+}
+
+
+@media screen and (min-width:946px){
+    html{
+        font-size: 60%;
+    }
+
+    .items{
+        font-size: 2rem;
+    }
+
+    /* ----------body 1 --------------- */
+
+    .imgbox{
+        max-width: 35rem;
+    }
+
+    .infinity{
+        left: 60%;
+        width: 20rem;
+        height: 20rem;
+        top: 35%;
+    }
+
+    .circle2{
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .owlmdn{
+        width: 400px;
+        height: 400px;
+    }
+
+    .back{
+        margin: 4rem 6rem;
+    }
+
+}
+
+
+@media screen and (min-width:1100px){
+
+    /* -----------body 1 ------------ */
+
+    .imgbox{
+        max-width:40.5rem;
+    }
+
+    .mainbody{
+        padding: 0 2rem;
+
+    }
+
+    .infinity{
+        left: 58%;
+        width: 25rem;
+        height: 25rem;
+        top: 28%;
+    }
+
+    .circle2{
+        width: 12rem;
+        height: 12rem;
+        left: 40%;
+    }
+    
+    .circle1{
+        width: 0rem;
+        height: 0rem;
+
+    }
+
+    .owlmdn{
+        width: 500px;
+        height: 500px;
+    }
+
+    .back{
+        margin: 4rem 9rem;
+    }
+
+}
+
+
+
+
+/* Phones having less width but great height */
+
+@media screen and (max-width: 450px) and (min-height: 780px){
+    .imgbox-m{
+        height: 45rem;
+        width: 45rem;
+        padding-top: 5rem;
+    }
+    
+    .mainbody{
+        gap: 12rem;
+
+    }
+}
+
+
+
+/* For devices like ipad */
+
+@media screen and (min-width:800px) and (min-height:900px){
+    .mainbody{
+        min-height: auto;
+    }
+}

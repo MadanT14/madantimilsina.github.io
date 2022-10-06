@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Inter:wght@300;400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+
+.container{
+    margin-top: 5rem;
+}
+.row{
+    display: flex;
+    height: 30rem;
+    overflow-y: hidden;
+}
+
+.row2{
+    flex-direction: row-reverse;
+
+}
+
+.b-imgbox, .b-textbox{
+    width: 100%;
+    height: 100%;
+}
+
+.b-textbox1{
+    background-color: #EEF3F4;
+}
+
+.b-textbox2{
+    background-color: #A67744;
+    color: white;
+
+}
+
+
+
+.b-textbox2 p{
+    color: rgba(255, 255, 255, 0.856);
+}
+
+.b-imgbox img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.b-textbox h1, .b-textbox p, .b-textbox .bannerbtn{
+
+    margin-top: 3rem;
+    margin-left: 10rem;
+}
+
+
+.b-textbox h1{
+    font-size: 3rem;
+    font-family: 'Barlow', sans-serif;
+
+}
+
+.textblack{
+    color: rgb(44, 44, 44);
+}
+
+.b-textbox p{
+    font-size: 1.6rem;
+    margin-bottom: 6rem;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+}
+
+.bannerbtn{
+    font-size: 1.3rem;
+    border: 2px solid black;
+    padding: 1rem 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.5s;
+    font-family: sans-serif;
+}
+
+.bannerbtn2{
+    border: 2px solid white;
+    color: white;
+}
+
+.bannerbtn1:hover{
+    background-color: white;
+}
+.bannerbtn2:hover{
+    background-color: white;
+    color: black;
+}
+
+
+@media screen and (max-width:319px){
+    html{
+        font-size: 52%;
+    }
+
+    .row{
+        display: block;
+        height: auto;
+        margin-bottom: 2rem;
+        text-align: center;
+        /* box-shadow: 0px 0px 8px 0px rgba(153, 153, 153, 0.247); */
+    }
+
+
+    .b-textbox{
+        padding: 2rem;
+    }
+
+    .b-textbox h1, .b-textbox p, .b-textbox .bannerbtn{
+        margin: auto;
+    }
+
+    .b-textbox p{
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+
+    .bannerbtn{
+        display: block;
+        width: 8rem;
+        text-align: center;
+    }
+
+    .b-textbox h1{
+        margin-bottom: 2rem;
+    }
+
+    .b-imgbox{
+        height: 20rem;
+    }
+
+    .b-imgbox img{
+        height: 100%;
+    }
+}
+
+
+@media screen and (min-width:320px){
+    html{
+        font-size: 52%;
+    }
+
+    .row{
+        display: block;
+        height: auto;
+        margin-bottom: 2rem;
+        text-align: center;
+        box-shadow: 0px 0px 8px 0px rgb(153, 153, 153);
+    }
+
+    .row2{
+        margin-top: 5rem;
+    }
+
+
+    .b-textbox{
+        padding: 2rem;
+    }
+
+    .b-textbox h1, .b-textbox p, .b-textbox .bannerbtn{
+        margin: auto;
+    }
+
+    .b-textbox p{
+        margin-bottom: 3rem;
+    }
+
+    .bannerbtn{
+        display: block;
+        width: 8rem;
+        text-align: center;
+    }
+
+    .b-textbox h1{
+        margin-bottom: 2rem;
+    }
+
+    .b-imgbox{
+        height: 20rem;
+    }
+
+    .b-imgbox img{
+        height: 100%;
+    }
+
+}
+@media screen and (min-width:481px){
+    html{
+        font-size: 55%;
+    }
+
+    .b-textbox .bannerbtn{
+        margin-top: 8rem;
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (min-width:600px){
+    .row{
+        display: flex;
+        height: 35rem;
+        text-align: left;
+    }
+
+    .row1{
+        margin-bottom:0;
+    }
+
+    .b-textbox, .b-imgbox{
+        width: 50%;
+        height: 100%;
+    }
+
+    .b-textbox{
+        text-align: left;
+    }
+
+    .b-textbox .bannerbtn{
+        margin: 0;
+        margin-top: 5rem;
+    }
+
+
+
+}
+@media screen and (min-width:769px){
+    html{
+        font-size: 58%;
+    }
+
+    .row{
+        height: 30rem;
+    }
+}
+@media screen and (min-width:946px){
+    html{
+        font-size: 60%;
+    }
+}
+@media screen and (min-width:1100px){
+    html{
+        font-size: 62.5%;
+    }
+
+    .row{
+        height: 40rem;
+    }
+
+    .row{
+        box-shadow: 0px 0px 8px 0px rgba(125, 125, 125, 0.416);
+    }
+
+    .b-textbox h1{
+        font-size: 4rem;
+        margin-top: 2rem;
+    }
+
+    .b-textbox p{
+        font-size: 2rem;
+        margin-bottom: 8rem;
+    }
+
+
+}
+
+

@@ -1,0 +1,846 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Inter:wght@300;400;500&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    height: auto;
+    
+}
+
+.whole{
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+
+.navbar{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 7rem;
+    background: white;
+    align-items: center;
+    z-index: 5;
+    transition: all 0.4s;
+}
+
+.navbar:hover{
+    box-shadow: 0px 9px 8px -7px #98989827;
+}
+
+.logobox{
+    height: 4rem;
+}
+
+.logoimg{
+    height: 100%;
+    width: 100%;
+}
+
+.items{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    font-size: 1.8rem;
+}
+
+.items a{
+    text-decoration: none;
+    color: black;
+}
+
+.item3 a{
+    color: #FF2121;
+    font-weight: 500;
+}
+
+.hamburger{
+    display: none;
+    z-index: 2;
+}
+
+.fa-solid{
+    font-size: 2.5rem;
+}
+
+.hamburger .fa-xmark{
+    display: none;
+}
+
+
+/* ----------------------about section starts---------------- */
+
+.bigtxt{
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    width: 500px;
+    margin:0 auto;
+    margin-top: 8rem;
+    color: rgb(41, 41, 41);
+}
+
+.txtcolor{
+    color: #FF2121;
+}
+
+.headpara{
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    width: 600px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.maingrid{
+    height: 400px;
+    width: 700px;
+    margin: 4rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 1rem;
+}
+
+
+
+.grid-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.gitem1{
+    grid-row: span 2;
+}
+.gitem3{
+    grid-row: span 2;
+}
+
+.ourstory{
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 4rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.storypara{
+    text-align: center;
+    width: 500px;
+    margin: 2rem auto;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(30, 30, 30);
+    margin-bottom: 5rem;
+
+}
+
+.value{
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 8rem 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.lastpart{
+    display: flex;
+    height: 500px;
+    justify-content: space-between;
+    padding: 0 4rem;
+}
+
+.lastimgbox{
+    width: 400px;
+    height: 100%;
+}
+
+.lastimgbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.columnboxs{
+    height: 100%;
+    width: 50%;
+}
+
+.column{
+    display: flex;
+    gap: 2rem;
+    height: 30%;
+    margin-top: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.col-imgbox{
+    width: 25%;
+    height: 100%;
+}
+
+
+.col-imgbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.col-textbox{
+    width: 55%;
+}
+
+.col-textbox h1{
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #3c83fe;
+}
+
+.col-textbox p{
+    font-size: 2rem;
+    color: rgb(26, 26, 26);
+}
+
+footer{
+    padding: 2rem 10rem;
+    margin-top: 10rem;
+    background-color: #f8f9fa;
+}
+
+footer h2{
+    color: #202125;
+    font-size: 2rem;
+    display: inline;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.fa-brands{
+    font-size: 2.5rem;
+    margin: 0 0.5rem;
+    color:  rgb(86, 86, 86);
+}
+
+.topline{
+    margin-top: 0.8rem;
+    margin-bottom: 4rem;
+}
+
+.footerwrap{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fabout h1{
+    color: rgb(86, 86, 86);
+    font-size: 2.5rem;
+    font-family: sans-serif;
+}
+
+.fabout p{
+    font-size: 1.5rem;
+    width: 42rem;
+    margin-top: 1.5rem;
+    font-family: sans-serif;
+    color: #707070;
+}
+
+.finfo h1{
+    color:  rgb(86, 86, 86);
+    font-size: 2.5rem;
+    font-family: sans-serif;
+}
+
+.finfo li{
+    list-style: none;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.finfo li a{
+    color: #707070;
+    text-decoration: none;
+    font-family: sans-serif;
+
+}
+
+.fsupport h1{
+    color:  rgb(86, 86, 86);
+    font-size: 2.5rem;
+    font-family: sans-serif;
+}
+
+.fsupport li{
+    list-style: none;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.fsupport li a{
+    text-decoration: none;
+    color: #707070;
+    font-family: sans-serif;
+
+}
+
+.bottomline{
+    margin-top: 8rem;
+}
+
+.copyright{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+.whole{
+    animation: fadein 4s;
+}
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width:319px){
+    html{
+        font-size: 52%;
+    }
+    .navbar{
+        padding: 2.8rem;
+        position: relative;
+        height: 7rem;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .navitems{
+        display: flex;
+        background-color: aquamarine;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+        transition: all linear 0.3s;
+        transform: translateX(100%);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .active .navitems{
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .navitems .items{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .active .hamburger .fa-xmark{
+        display: block;
+    }
+
+    .active .hamburger .fa-bars{
+        display: none;
+    }
+
+
+    /* ----------------body------------------- */
+
+    .bigtxt{
+        font-size: 3rem;
+        width: auto;
+        padding: 0 3rem;
+    }
+
+    .headpara{
+        width: auto;
+        padding: 0 3rem;
+    }
+
+    .maingrid{
+        width: auto;
+        height: 250px;
+        padding: 1rem;
+
+    }
+
+    .ourstory{
+        font-size: 3rem;
+    }
+
+    .storypara{
+        width: auto;
+        padding: 0 3rem;
+    }
+
+    .value{
+        font-size: 3rem;
+    }
+
+    .lastpart{
+        display: block;
+        padding: 0 1rem;
+        height: 400px;
+    }
+
+    .columnboxs{
+        width: 100%;
+    }
+
+    .lastimgbox{
+        display: none;
+    }
+
+    .col-imgbox{
+        width: 45%;
+    }
+
+    .col-textbox{
+        width: 45%;
+    }
+
+    .col-textbox h1{
+        font-size: 2rem;
+    }
+
+    .col-textbox p{
+        font-size: 1.2rem;
+    }
+
+
+
+
+}
+
+@media screen and (min-width:320px){
+    html{
+        font-size: 52%;
+    }
+
+    .mainbody{
+        padding-bottom: 2rem;
+    }
+
+    .navbar{
+        padding: 2.8rem;
+        position: relative;
+
+    }
+    .navitems{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .navitems{
+        display: flex;
+        background-color: aquamarine;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+        transition: all linear 0.3s;
+        transform: translateX(100%);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    .active .navitems{
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+    
+    .navitems .items{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .active .hamburger .fa-xmark{
+        display: block;
+    }
+
+    .active .hamburger .fa-bars{
+        display: none;
+    }
+
+    /* --------body--------------- */
+
+
+    .bigtxt{
+        font-size: 4rem;
+        width: auto;
+        padding: 0 4rem;
+    }
+
+    .headpara{
+        width: auto;
+        padding: 0 5rem;
+    }
+
+    .maingrid{
+        width: auto;
+        height: 300 px;
+        margin: 10rem 1rem;
+    }
+
+    .ourstory{
+        font-size: 4rem;
+        padding: 0 3rem;
+    }
+
+    .storypara{
+        width: auto;
+        padding: 0 8rem;
+    }
+
+    .value{
+        font-size: 3rem;
+    }
+
+    .lastpart{
+        display: block;
+        padding: 0 1rem;
+        height: 400px;
+    }
+
+    .columnboxs{
+        width: 100%;
+    }
+
+    .lastimgbox{
+        display: none;
+    }
+
+    .col-imgbox{
+        width: 45%;
+    }
+
+    .col-textbox{
+        width: 45%;
+    }
+
+    .col-textbox h1{
+        font-size: 2rem;
+    }
+
+    .col-textbox p{
+        font-size: 1.2rem;
+    }
+
+
+}
+
+@media screen and (min-width:481px){
+    html{
+        font-size: 55%;
+    }
+
+    .navitems{
+        width: 70%;
+    }
+
+
+    /* -------------body----------------------- */
+
+    .bigtxt{
+        font-size: 4rem;
+        padding: 0 8rem;
+    }
+
+    .headpara{
+        padding: 0 8rem;
+        margin-bottom: 15rem;
+    }
+
+    .maingrid{
+        height: 440px;
+        margin: 0 3rem;
+    }
+
+    .ourstory{
+        font-size: 3.5rem;
+        margin-top: 4rem;
+    }
+    .storypara {
+        padding: 0 12rem;
+    }
+
+    .value{
+        font-size: 3.5rem;
+    }
+
+    .col-imgbox{
+        width: 40%;
+    }
+
+    .col-textbox h1{
+        font-size: 2.5rem;
+    }
+
+    .col-textbox p{
+        font-size: 1.5rem;
+    }
+
+
+
+
+}
+
+@media screen and (min-width:600px){
+
+    .navbar{
+        position: static;
+        padding: 3rem;
+    }
+
+    .navitems{
+        display: block;
+        height: auto;
+        width: auto;
+        position: static;
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        background-color: transparent;
+    }
+
+    .navitems .items{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    /* -------------------body---------------- */
+
+
+    .bigtxt{
+        padding: 0 14rem;
+        font-size: 4rem;
+    }
+
+    .headpara{
+        padding: 0 15rem;
+        margin-bottom: 12rem;
+    }
+
+    .maingrid{
+        height: 350px;
+        margin: 0 12rem;
+        margin-bottom: 10rem;
+    }
+
+    .storypara{
+        padding: 0 16rem;
+    }
+
+
+
+    .lastpart{
+        display: flex;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+
+    .lastimgbox{
+        display: block;
+        height: 100%;
+    }
+
+    .column{
+        gap: 1rem;
+        margin-top: 3rem;
+    }
+
+    .col-textbox{
+        width: 60%;
+    }
+
+    .col-textbox h1{
+        font-size: 2.5rem;
+        margin-top: 0;
+    }
+
+    .col-textbox p{
+        font-size: 1.5rem;
+    }
+
+
+
+
+
+}
+
+@media screen and (min-width:769px){
+    html{
+        font-size: 58%;
+    }
+
+    .navbar{
+        padding: 0 5rem;
+    }
+
+    /* ---------------body-------------- */
+
+    .bigtxt{
+        font-size: 5rem;
+        padding: 0 15rem;
+    }
+
+    .headpara{
+        padding:0 20rem;
+        margin-bottom: 10rem;
+    }
+
+    .maingrid{
+        height: 400px;
+        margin: 0 18rem;
+        
+    }
+
+    .storypara{
+        padding: 0 24rem;
+    }
+
+    .col-textbox{
+        width: 70%;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (min-width:946px){
+    html{
+        font-size: 60%;
+    }
+
+    .items{
+        font-size: 2rem;
+    }
+
+    .bigtxt{
+        padding: 0 14rem;
+    }
+
+    .headpara{
+        padding: 0 22rem;
+        margin-bottom: 10rem;
+    }
+
+    .maingrid{
+        height: 400px;
+        margin: 0 25rem;
+    }
+
+    .storypara{
+        padding: 0 25rem;
+    }
+
+    .lastimgbox{
+        display: block;
+        width: 35%;
+    }
+
+    .columnboxs{
+        width: 50%;
+    }
+
+    .lastpart{
+        padding: 0 4rem;
+    }
+
+}
+
+@media screen and (min-width:1100px){
+    html{
+        font-size: 62%;
+    }
+    /* -----body----- */
+
+    .bigtxt{
+        padding: 0 40rem;
+    }
+
+    .headpara{
+        padding:0 40rem;
+        margin-bottom: 10rem;
+    }
+
+    .storypara{
+        padding: 0 50rem;
+    }
+
+    .maingrid{
+        margin: 0 50rem;
+        height: 40rem;
+    }
+
+
+
+}
+
+@media screen and (min-width:1100px){
+    .bigtxt{
+        font-size: 6rem;
+        padding: 0 40rem;
+    }
+
+    .headpara{
+        padding:0 50rem;
+        margin-bottom: 10rem;
+    }
+}
